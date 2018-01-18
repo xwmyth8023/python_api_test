@@ -1,0 +1,65 @@
+{
+    "hbib":{
+        "type":"object",
+        "properties":{
+            "articles":{
+                "type":"string"
+            },
+            "name":{
+                "type":"string"
+            },
+            "week":{
+                "type":"integer"
+            },
+            "sharing_url":{
+                "type":"string"
+            },
+            "media":{
+                "type":"object",
+                "properties":{
+                    "type":"string",
+                    "url":{}
+                }
+            },
+            "feed_images":{
+                "type":"object",
+                "properties":{
+                    "open_url_m":{},
+                    "closed_url_m": {},
+                    "open_url_d":{},
+                    "closed_url_d":{}
+                }
+            },
+            "size":{
+                "type":"object",
+                "properties":{
+                    "min_height": {
+                        "type":"number"
+                    },
+                    "max_height":{},
+                    "min_weight":{},
+                    "max_weight":{}
+                }
+            },
+            "content":{
+                "type":"object",
+                "properties":{
+                    "introBullets":{
+                        "type":"string"
+                    },
+                    "body":{
+                        "type":"string"
+                    },
+                    "symptoms":{
+                        "type":"string"
+                    },
+                    "checklistItems":{
+                        "type":"array",
+                        "anyof":"string"
+                    }
+                }
+            }
+
+        }
+    }
+}
