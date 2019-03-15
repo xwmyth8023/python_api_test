@@ -1,5 +1,4 @@
 import unittest
-import htmlTestRunner
 import requests
 import sys
 sys.path.append("..")
