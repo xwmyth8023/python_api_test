@@ -6,6 +6,6 @@ example_tests = TestLoader().loadTestsFromTestCase(ApiTest)
 
 suite = TestSuite([example_tests])
 
-runner = HTMLTestRunner(output='reports',report_title='My Report')
+runner = HtmlTestRunner.HTMLTestRunner(output='reports',report_title='My Report')
 
 runner.run(suite)
