@@ -1,6 +1,6 @@
 from unittest import TestLoader, TestSuite
 import HtmlTestRunner
-from test import ApiTest 
+from tests.test import ApiTest 
 
 example_tests = TestLoader().loadTestsFromTestCase(ApiTest)
 
