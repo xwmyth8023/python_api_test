@@ -1,4 +1,5 @@
 import json
+import os
 from os.path import join, dirname
 from jsonschema import validate
 
@@ -10,7 +11,7 @@ class JsonResonseValidate():
     def _load_json_schema(self):
         """ Loads the given schema file """
 
-        relative_path = join('schemas',self.filename)
+        relative_path = join('../schemas',self.filename)
         absolute_path = join(dirname(__file__), relative_path)
         print (relative_path,absolute_path)
 
