@@ -3,4 +3,4 @@ NAME=python-api-test
 VERSION=latest
 
 test:
-	cd ./tests && python3 testRunner.py
+	python3 testRunner.py
